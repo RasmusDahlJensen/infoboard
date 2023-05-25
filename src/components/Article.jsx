@@ -12,6 +12,9 @@ export const Article = (props) => {
 				<div className="headerProps">
 					<h3>{props.titleProp}</h3>
 					<h3>{props.titleProp2}</h3>
+					<figure>
+						<img src={props.titleImage} alt="titleImage" />
+					</figure>
 				</div>
 			</header>
 			<section className="sectionFlex">

@@ -4,7 +4,9 @@ import "./Main.scss";
 export const Main = () => {
 	return (
 		<main>
-			<Hero />
+			<section>
+				<Hero />
+			</section>
 		</main>
 	);
 };

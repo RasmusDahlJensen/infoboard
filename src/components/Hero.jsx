@@ -1,7 +1,9 @@
 import { Article } from "./article";
 import { useFetch } from "../hook/useFetch";
 import TechcollegeLogo from "../assets/TechcollegeLogo.svg";
+import WeatherLogo from "../assets/Weather.svg";
 import { Time } from "./time";
+import "./hero.scss";
 
 const url =
 	"https://api.openweathermap.org/data/2.5/weather?q=Aalborg&appid=4d58d6f0a435bf7c5a52e2030f17682d&units=metric";
@@ -21,6 +23,7 @@ export const Hero = () => {
 					logo={TechcollegeLogo}
 					titleProp={<Time />}
 					titleProp2={[Math.round(data.main.temp), "°"]}
+					titleImage={WeatherLogo}
 					sectionTitle1={"ST. BEDEDAG PÅ TECHCOLLEGE FRA 2024"}
 					sectionAuthor1={"Af Ledelsessekretariatet d. 15-3-2023"}
 					sectionContent1={
