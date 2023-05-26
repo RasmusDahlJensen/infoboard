@@ -7,13 +7,13 @@ export const Article = (props) => {
 		<article>
 			<header>
 				<figure>
-					<img src={props.logo} alt="Article Logo" />
+					<img src={props.logo} />
 				</figure>
 				<div className="headerProps">
 					<h3>{props.titleProp}</h3>
 					<h3>{props.titleProp2}</h3>
 					<figure>
-						<img src={props.titleImage} alt="titleImage" />
+						<img src={props.titleImage} />
 					</figure>
 				</div>
 			</header>

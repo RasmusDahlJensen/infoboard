@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="577" height="100" viewBox="0 0 577 100">
+  <defs>
+    <filter id="BUSAFGANG" x="0" y="10" width="567" height="90" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="BUSAFGANG-2" x="10" y="0" width="567" height="90" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#BUSAFGANG)">
+    <text id="BUSAFGANG-3" data-name="BUSAFGANG" transform="translate(6 11)" fill="#3e3d41" font-size="65" font-family="Termina-Heavy, Termina" font-weight="800"><tspan x="0" y="62">BUSAFGANG</tspan></text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#BUSAFGANG-2)">
+    <text id="BUSAFGANG-4" data-name="BUSAFGANG" transform="translate(16 1)" fill="#ddd2b9" font-size="65" font-family="Termina-Heavy, Termina" font-weight="800"><tspan x="0" y="62">BUSAFGANG</tspan></text>
+  </g>
+</svg>

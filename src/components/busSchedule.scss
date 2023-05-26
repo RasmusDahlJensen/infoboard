@@ -1,0 +1,17 @@
+.busTimes {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 15px;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+.busTable {
+	width: 100%;
+}
+
+.busSectionColor {
+	background-color: #ddd2b9;
+	max-width: 100%;
+}

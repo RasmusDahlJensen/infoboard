@@ -32,7 +32,7 @@ header {
 		width: 50px;
 		margin: 0;
 		padding: 0;
-		border-left: 2px solid black;
+		// border-left: 2px solid black;
 	}
 }
 section {
@@ -43,6 +43,7 @@ section {
 	background-color: #ddd2b9;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	max-width: 100%;
 }
 
 p {
