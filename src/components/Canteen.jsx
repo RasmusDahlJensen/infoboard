@@ -44,7 +44,15 @@ export const Canteen = () => {
 					<section className="busSectionColor">
 						<section className="busTable">
 							{data.Days.map((data, index) => {
-								return <div key={index}>{data.DayName}</div>;
+								return (
+									<div key={index}>
+										<h3>
+											{data.DayName.charAt(0).toUpperCase() +
+												data.DayName.slice(1)}
+										</h3>
+										<p>{data.Dish}</p>
+									</div>
+								);
 							})}
 						</section>
 					</section>
