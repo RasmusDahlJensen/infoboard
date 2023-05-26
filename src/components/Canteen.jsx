@@ -1,4 +1,6 @@
 import { useFetch } from "../hook/useFetch";
+import canteen from "../assets/Canteen.svg";
+import canteenLogo from "../assets/CanteenLogo.svg";
 
 export const Canteen = () => {
 	const weekday = [
@@ -25,7 +27,29 @@ export const Canteen = () => {
 
 	return (
 		<>
-			{loading && <div>Loading...</div>} {data && console.log()}
+			{data && console.log(data.Days)}
+			{loading && <div>Loading...</div>}
+			{data && (
+				<article>
+					<header>
+						<figure>
+							<img src={canteenLogo} alt="Bus Logo" />
+						</figure>
+						<div className="headerProps">
+							<figure>
+								<img src={canteen} className="headerPropImg" alt="Bus" />
+							</figure>
+						</div>
+					</header>
+					<section className="busSectionColor">
+						<section className="busTable">
+							{data.Days.map((data, index) => {
+								return <div key={index}>{data.DayName}</div>;
+							})}
+						</section>
+					</section>
+				</article>
+			)}
 		</>
 	);
 };

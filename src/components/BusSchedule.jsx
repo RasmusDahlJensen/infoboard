@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./BusSchedule.scss";
 import bus from "../assets/Bus.svg";
 import busLogo from "../assets/BusLogo.svg";
@@ -20,11 +21,11 @@ export const BusSchedule = () => {
 				<article>
 					<header>
 						<figure>
-							<img src={busLogo} />
+							<img src={busLogo} alt="Bus Logo" />
 						</figure>
 						<div className="headerProps">
 							<figure>
-								<img src={bus} className="headerPropImg" />
+								<img src={bus} className="headerPropImg" alt="Bus" />
 							</figure>
 						</div>
 					</header>
